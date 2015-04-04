@@ -22,9 +22,8 @@ Next, add a Facade for more convenient usage. In ```config/app.php``` add the fo
 'Unique' => 'Parsidev\Unique\Facades\Unique',
 ```
 
-Publish config files:
-```
-php artisan vendor:publish
-```
-for change username, password and other configuration change ```config/pars_unique.php```
 
+For generate unique id use this code.
+```
+echo Unique::generate();
+```
