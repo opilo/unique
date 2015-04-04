@@ -1,0 +1,21 @@
+{
+    "name": "parsidev/unique",
+    "description": "Unique ID generator for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Reza",
+            "email": "info@parsidev.ir"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Parsidev\\Unique": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
