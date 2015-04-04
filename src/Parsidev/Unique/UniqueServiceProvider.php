@@ -15,7 +15,7 @@ class UniqueServiceProvider extends ServiceProvider {
     public function register() {
         $this->app['unique'] = $this->app->share(function($app) {
             $config = config('unique');
-            return new Unique($config, new SoapClient($config['webserviceUrl']));
+            return new Unique($config);
         });
     }
 
