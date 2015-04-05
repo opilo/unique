@@ -1,6 +1,6 @@
 installation
 ------------
-For install this package Edit your project's ```composer.json``` file to require parsidev/unique
+To install this package edit your project's ```composer.json``` file to require parsidev/unique:
 
 ```php
 "require": {
@@ -13,17 +13,17 @@ Now, update Composer:
 composer update
 ```
 
-Once composer is finished, you need to add the service provider. Open ```config/app.php```, and add a new item to the providers array.
+Once composer is finished, you need to add the service provider. Open ```config/app.php``` and add a new item to the providers array.
 ```
 'Parsidev\Unique\UniqueServiceProvider',
 ```
-Next, add a Facade for more convenient usage. In ```config/app.php``` add the following line to the aliases array:
+For more convenient you can create a Facade. Add the following line in ```config/app.php```  to the aliases array:
 ```
 'Unique' => 'Parsidev\Unique\Facades\Unique',
 ```
 
 
-For generate unique id use this code.
+To generate an unique id use the ``generate`` method.
 ```
 echo Unique::generate();
 ```
